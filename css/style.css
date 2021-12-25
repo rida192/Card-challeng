@@ -1,0 +1,139 @@
+
+/* start of global rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small screens*/
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+/* medium screens */
+
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+
+/* larg screens */
+
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    color: rgb(0 0 0 / 80%);
+}
+/* end of global rules */
+.main{
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+    position: relative;
+
+}
+.container{
+   
+    height: calc(100vh - 14px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+.card{
+    width: 350px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+}
+.card-header{
+    background-image: url(/images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+}
+.image{
+    position: relative;
+    margin-bottom: 80px;
+}
+.image img{
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    top: -133px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+}
+
+.name-and-age h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.name-and-age h2 span{
+    font-weight: 400;
+    color: #777;
+}
+.name-and-age h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #777;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    max-width: 100%;
+    text-align: center;
+}
+.card-footer .box{
+    padding: 20px 26px;
+    flex: 1;
+
+}
+.card-footer .box span{
+    display: block;
+}
+
+.card-footer .box span:first-of-type{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card-footer .box span:last-of-type{
+    color: #777;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* circles */
+.circle{
+    position: relative;
+    background-repeat: no-repeat;
+}
+.up{
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.down{
+    bottom: -900px;
+    left: 0;
+    position: absolute;
+}
